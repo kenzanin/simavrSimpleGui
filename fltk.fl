@@ -1,0 +1,57 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0305
+header_name {.h}
+code_name {.cxx}
+class fltkWin {open
+} {
+  Function {make_window()} {open
+  } {
+    Fl_Window win01 {
+      label {Kenzanin SimAvr Gui} open selected
+      xywh {563 418 465 210} type Double when 0 visible
+    } {
+      Fl_Output fnameOut {
+        label asdasdasdasd
+        xywh {5 5 295 25} box BORDER_BOX
+      }
+      Fl_Button btn01 {
+        label {Load Firmware}
+        callback btn01Cb
+        xywh {315 5 135 25}
+      }
+      Fl_Box {} {
+        label {Firmware :}
+        xywh {5 36 80 25} align 20
+      }
+      Fl_Box {} {
+        label {MCU :}
+        xywh {5 67 50 25} align 20
+      }
+      Fl_Box {} {
+        label {Freq :}
+        xywh {5 99 50 25} align 20
+      }
+      Fl_Output outFirmware {
+        xywh {90 36 210 25} box BORDER_BOX
+      }
+      Fl_Output outMcu {
+        xywh {90 67 210 25} box BORDER_BOX
+      }
+      Fl_Output outFreq {
+        xywh {90 99 210 25} box BORDER_BOX
+      }
+      Fl_Button btnRun {
+        label Stop
+        callback btnRunCb
+        xywh {315 33 135 93} labelsize 24
+      }
+      Fl_Box {} {
+        label PORTB
+        xywh {5 140 60 25} align 20
+      }
+      Fl_Value_Output pbOut {
+        xywh {64 140 56 25}
+      }
+    }
+  }
+}
